@@ -5,10 +5,10 @@ import schedule
 from watchdog.observers import Observer 
 from watchdog.events import FileSystemEventHandler 
  
-WATCHED_DIR = r'\\dalimo.ru\userdocsSPB\Корпоративные материалы\Медиафайлы' #Директория с видео  
-PLAYLIST_DIR = r'C:\Playlist' #Директория, где будет создан плейлист 
+WATCHED_DIR = r'\\company.local\shared\media'  # Example paths are anonymized for public repository
+PLAYLIST_DIR = r'C:\Playlist'   # Example paths are anonymized for public repository
 PLAYLIST_FILE = os.path.join(PLAYLIST_DIR, 'playlist.m3u') 
-VLC_PATH = r"C:\Program Files\VideoLAN\VLC\vlc.exe" 
+VLC_PATH = r"C:\Program Files\VideoLAN\VLC\vlc.exe" # Example paths are anonymized for public repository
 DEBOUNCE_INTERVAL = 1  
  
 vlc_process = None 
